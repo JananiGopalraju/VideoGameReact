@@ -32,7 +32,7 @@ const VideoGame = () => {
   return (
 <div className="overflow-x-auto">
     <div className="flex items-start justify-center mb-10 mt-5">
-      <input type="text" className="input input-bordered join-item" placeholder="Email" onChange={(e) => setGameTitle(e.target.value)} />
+      <input type="text" className="input input-bordered join-item" placeholder="Search for a game" onChange={(e) => setGameTitle(e.target.value)} />
       <button className="btn join-item rounded-r-full" onClick={searchGame}>Search</button>
     </div>
     {error&& <Error />}
